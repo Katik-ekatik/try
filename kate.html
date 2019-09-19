@@ -1,0 +1,89 @@
+</!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.min.js"></script>
+<style type="text/css">
+
+	*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background: #042f36;
+}
+.wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.title{
+  width: 21ch;
+  overflow: hidden;
+  color: Purple;
+  font-size: 70px;
+  font-family: Comic Sans;
+  white-space: nowrap;
+  border-right: 4px solid orange;
+  animation: printed-text 5s steps(21),
+             flashin-border .75s step-start infinite;
+}
+
+@keyframes flashin-border{
+  0%{
+    border-color: orange;
+  }
+  50%{
+    border-color: transparent;
+  }
+  100%{
+    border-color: orange;
+  }
+}
+
+@keyframes printed-text{
+  from {
+    width: 0%;
+  }
+}
+body{
+	
+	position: absolute;
+
+}
+.main{
+	height: 1600px;
+	width: 1000px;
+	position: absolute;
+	background-color: #CB60D3;
+}
+
+</style>
+</head>
+<body>
+	<div class="main">
+		<div class="wrapper">
+
+
+<h1 class="title">Кать пойдем гулять)0</h1>
+			
+<script>
+    var sound = new Howl({
+      src: ['kek.mp3'],
+      volume: 0.5,
+      onend: function () {
+        alert('Finished!');
+      }
+    });
+    sound.play()
+</script>
+  
+</div>
+	</div>
+
+</body>
+</html>
